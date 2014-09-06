@@ -1,7 +1,7 @@
 /* Imitate the SAP UI5 Header with gradient and font*/
 
 .title-header {
-    @include linear-gradient(#707376, #333333);
+    @include linear-gradient(top, #a7c7dc 0%, #85b2d3 100%);
     color: white;
     position: relative;
     background-color: gray;

@@ -7,7 +7,7 @@
  *
  * Main module of the application.
  */
-  angular.module('exampleApp', [
+  angular.module('threeJSApp', [
     'ngResource',
     'ngRoute',
     'ui.bootstrap'

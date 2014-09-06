@@ -17,9 +17,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-family: "Fira Sans", Arial, sans-serif;
-  @include background-image(linear-gradient(top, #c9de96 0%, #8ab66b 44%, #398235 100%));
-  background-repeat: repeat;
-  background-attachment: fixed;
 }
 p {
   font-weight: 300;
@@ -38,6 +35,4 @@ p {
 
 // injector
 @import 'header/header.scss';
-@import 'search/search.scss';
-@import 'selection/selection.scss';
 // endinjector

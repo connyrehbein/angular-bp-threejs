@@ -14,7 +14,7 @@ module.exports = function(grunt) {
     app: 'frontend',
     build: 'dist',
     port: '9000',
-    moduleName : 'exampleApp'
+    moduleName : 'threeJSApp'
 
   };
 
@@ -389,7 +389,7 @@ module.exports = function(grunt) {
       options: {
         // This should be the name of your apps angular module
         // appConfig.moduleName is inserted here, otherwise, the templates are not loaded correctly
-        module: 'exampleApp',
+        module: 'moduleName',
         htmlmin: {
           collapseBooleanAttributes: true,
           collapseWhitespace: true,
