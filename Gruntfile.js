@@ -13,7 +13,8 @@ module.exports = function(grunt) {
     // configurable paths
     app: 'frontend',
     build: 'dist',
-    port: '9000'
+    port: '9000',
+    moduleName : 'exampleApp'
 
   };
 
@@ -323,7 +324,7 @@ module.exports = function(grunt) {
       }
     },
 
-    // The following *-min tasks will produce minified files in the dist folder
+    // The following *-min tasks will produce minified files in the run folder
     // By default, your `index.html`'s <!-- Usemin block --> will take care of
     // minification. These next options are pre-configured if you do not wish
     // to use the Usemin blocks.
@@ -387,7 +388,8 @@ module.exports = function(grunt) {
     ngtemplates: {
       options: {
         // This should be the name of your apps angular module
-        module: 'angular-boilerplate',
+        // appConfig.moduleName is inserted here, otherwise, the templates are not loaded correctly
+        module: 'exampleApp',
         htmlmin: {
           collapseBooleanAttributes: true,
           collapseWhitespace: true,
