@@ -4,35 +4,35 @@
 // bourbon is a lightweight mixin library as an alternative to compass
 @import "bourbon";
 // Fira Sans
-@import url(http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,300italic,400italic,500italic,700italic);
+// @import url(http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,300italic,400italic,500italic,700italic);
 
 // Josefin Sans
-// @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic);
 
-/* Space out content a bit */
 
+html {
+  height: 100%
+}
 body {
-  color: white;
-  padding: 0;
+  height: 100%;
   font-size: 16px;
-  line-height: 1.5;
-  font-family: "Fira Sans", Arial, sans-serif;
-}
-p {
-  font-weight: 300;
-}
-.container-fluid {
-  padding: 0;
+  position: relative;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-.section-container {
-    font-size: em(20px);
-    header {
-        padding-bottom: em(20px);
-        padding-top: em(20px);
-    }
+.app-container {
+  background-color: #333;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 0px;
+  overflow: hidden;
 }
 
 // injector
 @import 'header/header.scss';
+@import 'menu/menu.scss';
+@import 'scene/scene.scss';
 // endinjector

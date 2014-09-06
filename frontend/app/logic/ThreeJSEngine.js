@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('threeJSApp')
-  .factory('threeJSEngine', function() {
+  .factory('ThreeJSEngine', function() {
 
     var scene,
       camera,

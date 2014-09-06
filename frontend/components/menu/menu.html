@@ -1,0 +1,26 @@
+<section>
+  <header>
+    <h3>Controls</h3>
+  </header>
+
+  <div>
+    <form>
+      <!-- slower button -->
+      <button ng-click="slower()" class="btn btn-default" ng-hide="isPaused">
+        <i class="fa fa-backward"></i>
+      </button>
+
+      <!-- pause/resumen button -->
+      <button ng-click="triggerPause()" class="btn btn-default">
+        <i ng-show="isPaused" class="fa fa-play"></i>
+        <i ng-hide="isPaused" class="fa fa-pause"></i>
+      </button>
+
+      <!-- faster button -->
+      <button ng-click="faster()" class="btn btn-default" ng-hide="isPaused">
+        <i class="fa fa-forward"></i>
+      </button>
+
+    </form>
+  </div>
+</section>

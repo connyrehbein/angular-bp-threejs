@@ -1,12 +1,11 @@
 # Angular Boilerplate - item search/selection
 
 
-
 ### Setup
 The base setup is always the same and based on a mix of the yeoman generator-angular(LINK) and generator-angular-fullstack(LINK).
 
 **Angular** dependencies with **HTML**, **SASS** with **Bourbon**, **ui-bootstrap**, **bootstrap css**, **font-awesome css**, and **normalise.css** ( no jquery ).
- 
+
 The different branches each contain another example.
 
 
@@ -34,7 +33,7 @@ The search and selection view are capsulated in separate components as directive
 
 If you have installed Grunt globally in the past, you will need to remove it first: npm uninstall -g grunt
 
-##### Load the npm modules 
+##### Load the npm modules
 (mostly for the grunt tasks and sass compiling)
 
 `$ npm update`
@@ -49,3 +48,14 @@ If you have installed Grunt globally in the past, you will need to remove it fir
 Depending on the grunt sass task, installing ruby's sass compiler might be neccessary
 
 `gem install sass`
+
+### Run
+
+run `$ grunt serve` in the root directory
+this starts a server at port 9000 with livereload functionality
+
+### Build
+
+run `$ grunt build --force` to build a version for deployment
+
+Note: the `--force` is neccessary for now, otherwise the useminprepare in grunt aborts the build. Haven't found a solution for that yet.

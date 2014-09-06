@@ -29,9 +29,12 @@
 
     <!-- begin content -->
 
-        <header class="title-header"
+        <header class="app-header"
           ng-include="'components/header/header.html'">
         </header>
+
+        <threejs-menu></threejs-menu>
+        <threejs-scene></threejs-scene>
     </div>
 
     <!-- end content -->
@@ -63,6 +66,10 @@
     <script src="app/app.js"></script>
     <!-- injector:js -->
     <script src="app/logic/ThreeJSEngine.js"></script>
+    <script src="components/menu/menu.controller.js"></script>
+    <script src="components/menu/menu.directive.js"></script>
+    <script src="components/scene/scene.controller.js"></script>
+    <script src="components/scene/scene.directive.js"></script>
     <!-- endinjector -->
     <!-- endbuild -->
 

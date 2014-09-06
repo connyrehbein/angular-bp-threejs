@@ -1,20 +1,13 @@
-/* Imitate the SAP UI5 Header with gradient and font*/
-
-.title-header {
-    @include linear-gradient(top, #a7c7dc 0%, #85b2d3 100%);
-    color: white;
-    position: relative;
-    background-color: gray;
-    height: em(80px);
-    text-align: center;
-    padding-top: 1em;
-    span.title {
-        font-size: em(25px);
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
-        line-height: 23px;
-        vertical-align: middle;
-        text-shadow: 1px 1px 2px #333333;
-        white-space: nowrap;
-    }
+.app-header {
+  z-index: 10;
+  text-align: center;
+  margin: auto;
+  color: #fff;
+  height: 60px;
+  right:0;
+  left: 0;
+  background-color: #eee;
+  position:absolute;
+  background-color: rgba(100,100,100, 0.5);
+  border-bottom: 2px solid #ddd;
 }
