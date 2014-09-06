@@ -389,7 +389,7 @@ module.exports = function(grunt) {
       options: {
         // This should be the name of your apps angular module
         // appConfig.moduleName is inserted here, otherwise, the templates are not loaded correctly
-        module: 'moduleName',
+        module: 'threeJSApp',
         htmlmin: {
           collapseBooleanAttributes: true,
           collapseWhitespace: true,
