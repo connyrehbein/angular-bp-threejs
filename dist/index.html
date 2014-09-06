@@ -10,25 +10,23 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="app/83d1f201.vendor.css">
-    <link rel="stylesheet" href="app/468565c3.app.css">
+    <link rel="stylesheet" href="app/0f658c41.app.css">
 </head>
 
-<body ng-app="exampleApp">
-    <div class="container-fluid" ng-cloak>
+<body ng-app="threeJSApp">
+    <div class="container-fluid app-container" ng-cloak>
         <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- begin content -->
 
-        <header class="title-header"
+        <header class="app-header"
           ng-include="'components/header/header.html'">
         </header>
 
-        <div class="container">
-            <bp-search></bp-search>
-            <bp-selection></bp-selection>
-        </div>
+        <threejs-menu></threejs-menu>
+        <threejs-scene></threejs-scene>
     </div>
 
     <!-- end content -->
@@ -41,13 +39,13 @@
     <!-- Do not add any new files or modules manually.
   the Grunt builder takes care of that -->
 
-    <script src="app/46ee340c.vendor.js"></script>
+    <script src="app/327e4d43.vendor.js"></script>
 
 
     <!-- Do not add any new files or modules manually.
   the Grunt builder takes care of that -->
 
-    <script src="app/7f76f0b7.app.js"></script>
+    <script src="app/a0e91c82.app.js"></script>
 
 </body>
 
