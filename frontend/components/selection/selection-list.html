@@ -1,0 +1,15 @@
+<section class="fruit-selection container section-container" ng-show="manager.selectedFruits().length > 0">
+
+    <header>
+        <h3>Selected Fruits:</h3>
+    </header>
+
+    <!-- loop over all selected materials -->
+    <div ng-repeat="fruit in manager.selectedFruits()" class="selected-fruit" ng-class="{right: isRightIndex($index)}">
+
+        <!-- panel is included via angular directive and the scope (material) is copied for each loop -->
+        <div ng-include="'components/selection/selection-item.html'"></div>
+
+    </div>
+
+</section>

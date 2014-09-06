@@ -1,0 +1,43 @@
+// bower:scss
+// endbower
+//
+// bourbon is a lightweight mixin library as an alternative to compass
+@import "bourbon";
+// Fira Sans
+@import url(http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,300italic,400italic,500italic,700italic);
+
+// Josefin Sans
+// @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic);
+
+/* Space out content a bit */
+
+body {
+  color: white;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Fira Sans", Arial, sans-serif;
+  @include background-image(linear-gradient(top, #c9de96 0%, #8ab66b 44%, #398235 100%));
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+p {
+  font-weight: 300;
+}
+.container-fluid {
+  padding: 0;
+}
+
+.section-container {
+    font-size: em(20px);
+    header {
+        padding-bottom: em(20px);
+        padding-top: em(20px);
+    }
+}
+
+// injector
+@import 'header/header.scss';
+@import 'search/search.scss';
+@import 'selection/selection.scss';
+// endinjector

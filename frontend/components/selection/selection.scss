@@ -1,0 +1,34 @@
+.fruit-selection {
+    position: relative;
+    .selected-fruit {
+        color: black;
+        width: 48%;
+        display: inline-block;
+        &.right {
+            float: right;
+        }
+        .header-row {
+            border-bottom: #000 1px solid;
+        }
+        h2 {
+            margin: 1em 0;
+        }
+    }
+}
+
+.fruit-infos {
+    position: relative;
+    .price-view, .price-edit-view, .price-distance {
+        display: inline-block;
+    }
+    .price-distance {
+        position: absolute;
+        right: 0px;
+    }
+    .red {
+        color: red;
+    }
+    .green {
+        color: green;
+    }
+}
