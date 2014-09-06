@@ -1,5 +1,4 @@
-# Angular Boilerplate - item search/selection
-
+# Angular Boilerplate - threejs example
 
 ### Setup
 The base setup is always the same and based on a mix of the yeoman generator-angular(LINK) and generator-angular-fullstack(LINK).
@@ -9,12 +8,14 @@ The base setup is always the same and based on a mix of the yeoman generator-ang
 The different branches each contain another example.
 
 
-### fruit selection example
-The master branch contains a fruit selection/shopping example with a angular-bootstrap typeahead and panels.
+### threejs example
 
-The logic is stored in a Fruit model and FruitManager (factories).
+The master branch contains a moving 3d cube example, implemented with angular and threejs.
+The scene logic is stored in app/logic/ThreeJSEngine (factory).
 
-The search and selection view are capsulated in separate components as directives with their respective controllers, views and styles.
+The menu and header are separate components with the respective files under components/componentname
+
+The threejs code is based on and explained at the :  [threejs getting started section](http://threejs.org/docs/index.html#Manual/Introduction/Creating_a_scene)
 
 
 ### Installing
